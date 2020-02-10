@@ -85,7 +85,7 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
-    - name: Build firmware
+    - name: Build my firmware
       working-directory: ./openwrt
       run: |
         echo -e "$(nproc) thread build."
